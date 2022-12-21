@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+:root{
+    --white: #FFFFFF;
+    --black:#0D0D0D;
+    --red: #C00511;
+    --footer:#252423;
+    --gray:#C4C4C4;
+}
+
+body{
+    font-size: 20px;
+    background-color: var(--black);
+    font-family: 'Roboto', sans-serif;
+/* font-family: 'Rubik Mono One', sans-serif; */
+}
+
+button,
+input{
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border:none;
+
+}
+
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    outline:none;
+
+}
+ul li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* //////////////////////Header styles/////////////// */
+#description_header{
+    background-image: none;
+    height: 70px;
+}
+header{
+    background-image:url('/image/black-panther-2-social-featured.avif') ;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y:0 ;
+}
+#respCheck,
+.respBtn{
+    display: none;
+}
+
+.header_shadow{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+.header_main_container{
+    padding-top: 49px;
+}
+
+.header_nav ul{
+    gap: 60px;
+}
+.header_nav ul li a{
+    font-weight: 400;
+    font-size: 80%;
+    color: var(--white);
+}
+
+.header_icon_container{
+    gap:20px;
+}
+
+.search_container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search_container input{
+    background-color: none;
+    background: none;
+    color: var(--white);
+}
+
+.search_container input::placeholder{
+    font-weight: 200;
+    font-size: 100%;
+    color: var(--white);
+}
+.header_icon_container{
+    background: none;
+}
+.header_icon_container button{
+    background: none;
+}
+
+.header_text_box{
+    margin-top: 150px;
+    
+}
+.main_title{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 200%;
+}
+.comedy_type_container{
+    margin-top: 21px;
+    gap: 12px;
+}
+
+.comedy_type_container li{
+    font-size: 90%;
+    font-weight: 300;
+    color: var(--white);
+    padding-right: 12px;
+    border-right: 1px solid var(--white);
+
+}
+.comedy_type_container li:nth-last-child(1){
+    border-right: none;
+}
+.header_paragraph{
+    color: var(--white);
+    font-weight: 300;
+    font-size: 80%;
+    margin-top: 30px;
+    max-width: 445px;
+    line-height: 22px;
+}
+.movie_detail_container{
+    gap: 34px;
+}
+.movie_detail_container li{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 45px;
+    font-weight: 300;
+    font-size: 90%;
+}
+.header_buttons{
+    margin-top:47px;
+    gap: 47px;
+    
+}
+.header_buttons button{
+    padding: 15px 35px;
+    border-radius: 99px;
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 90%;
+}
+.header_buttons button:nth-child(2){
+    background: linear-gradient(262.15deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 0.3px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    color: var(--red);
+}
+section{
+    margin: 50px 0;
+}
+.section_header{
+    display: flex;
+    gap: 43px;
+    align-items: center;
+}
+
+.section_header h2{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 160%;
+
+}
+.section_header span{
+    width: 291px;
+    height: 6px;
+    background: linear-gradient(90.03deg, #C00511 49.97%, rgba(192, 5, 17, 0) 92.25%);
+}
+
+.view_all_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+
+}
+
+.view_all_container a{
+    color: var(--gray);
+    font-size: 80%;
+    font-weight: 500;
+}
+.video_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(358px,1fr));
+    gap: 48px;
+}
+
+.video_card video{
+    width: 100%;
+    height: 243px;
+    border-radius: 6px;
+}
+
+.card_title{
+    font-weight: 800;
+    font-size: 90%;
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 23px;
+}
+.card_title:hover{
+    color: var(--red);
+}
+.slider_main_container{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    gap: 28px;
+
+}
+
+.slider_left_right_btn{
+    background:none;
+}
+
+.slider_inner_container{
+    width: 100%;
+    gap: 34px;
+    display: flex;
+    overflow: hidden;
+}
+.slider_img_container{
+    width: 265px;
+    height: 392px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.slider_img_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: .3s;
+}
+.slider_img_container:hover img{
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: var(--footer);
+    padding-top: 114px;
+    padding-bottom: 56px;
+}
+
+.lists li a{
+    color: var(--gray);
+    margin: 0 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 60%;
+}
+
+.lists li a:hover{
+    color: var(--white); 
+}
+
+.social_container {
+    width: 150px;
+    justify-content: space-between;
+}
+
+.download{
+    align-items: center;
+    justify-content: center;
+    margin-top: 56px;
+    list-style: none;
+
+}
+
+
+/* ////////////////////// page 2////////////// */
+
+
+.page_2_container{
+    gap: 109px;
+}
+.w-50{
+    width: 50%;
+}
+.page_2_movie_detail{
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gap-22{
+    gap: 22px;
+}
+.page_2_title{
+    font-weight: 800;
+    font-size: 160%;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.desc_page_image{
+    width: 288px;
+    height: 367px;
+    margin-top: 28px;
+}
+.cast_container h3{
+    font-weight: 600;
+    font-size: 90%;
+    color: var(--white);
+    text-align: center;
+}
+.cast_container{
+    margin-top: 85px;
+}
+.cast_container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cast_container ul li{
+    gap: 18px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cast_container ul li img{
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cast_container ul li div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cast_container ul li div h4{
+    font-weight: 600;
+    font-size: 70%;
+    color: var(--red);
+}
+.cast_container ul li div p{
+    font-weight: 400;
+    font-size: 60%;
+    color: var(--white);
+}
+.movie_info_container{
+    /* display: flex; */
+    gap: 27px;
+}
+
+.movie_info_btn_container{
+    display: flex;
+    gap: 47px;
+
+}
+.movie_info_btn_container button{
+    background: none;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 100%;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 9px;
+    transition: 0.4545124s;
+}
+.movie_info_btn_container button:hover{
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.movie_info_container p{
+    margin-top: 29px;
+    font-weight: 400;
+    font-size: 100%;
+    color: var(--gray);
+    background: linear-gradient(177.88deg, #8B8B8B 43.47%, rgba(139, 139, 139, 0) 119.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.movie_play_btn{
+    width: 179px;
+    height: 47px;
+    background-color:var(--red);
+    color: var(--white);
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+.movie_buttons{
+    margin-top: 69px;
+    gap: 73px;
+}
+
+.movie_buttons div{
+    gap: 18px;
+}
+.movie_buttons div button{
+    width: 47px;
+    height: 47px;
+    background: none;
+    border: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.454548755s;
+}
+.movie_buttons div button:hover{
+    border: 1px solid var(--red);
+}
+.movie_buttons div button:hover path{
+    border: 1px solid var(--red);
+}
